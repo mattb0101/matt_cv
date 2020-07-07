@@ -2,10 +2,10 @@
 
 This directory contains a sample resume edited with ReLaXed.
 
-> Master document: [``cv.pug``](https://github.com/IllusiveBagel/CV/cv.pug). <br/>
-Stylesheet: [``cv.scss``](https://github.com/IllusiveBagel/CV/cv.scss).
+> Master document: [``cv.pug``](https://github.com/IllusiveBagel/CV/blob/master/cv.pug). <br/>
+Stylesheet: [``cv.scss``](https://github.com/IllusiveBagel/CV/blob/master/cv.scss).
 
-<p align=center><img src="https://github.com/IllusiveBagel/CV/cv_screenshot.png"/></p>
+<p align=center><img src="https://github.com/IllusiveBagel/CV/blob/master/cv_screenshot.png"/></p>
 
 While web-based resumes are increasingly popular, some employers still require a PDF document. PDF CVs can be created from Word or LaTeX templates, HTML/CSS layouts are more diverse and sometimes better looking.
 
