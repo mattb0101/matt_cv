@@ -10,3 +10,24 @@
 .decorator::after {
   margin-left: 1px;
 }
+
+#main {
+  width: calc(var(--main-width) - 20px);
+}
+
+#sidebar {
+  width: calc(var(--sidebar-width) + 20px);
+  padding-top: 24px;
+}
+
+.name {
+  width: 100%;
+  text-align: center;
+  font-size: 200%;
+}
+
+.subtitle {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}

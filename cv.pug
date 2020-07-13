@@ -1,86 +1,93 @@
 include cv-mixins.pug
 
 #main
-  #title
-    h1 Jon Snow
-    .subtitle King in the North
+  .main-block
+    h2 #[i.fa.fa-graduation-cap] Education
+    
+    +item("GCSE's", "Secondary School", "Bayhouse School", "2010", "2015")
+      .description Average grade of a B accross the board with A's in English and Maths
+      
+    +item("Level 3 Diploma in Gaming and Computing", "College", "Fareham College",  "2015", "2016")
+      .description Computing Course Focusing on Gaming With Units in Software and Web Development
+    
+    +item("Level 3 Extended Diploma in IT and Telecomms", "Apprenticeship", "3aaa Apprenticeships", "2016", "2017")
+      .concise
+        :markdown-it
+          This course included multiple important units:
+          - Networking
+          - Software Development
+          - IT Support
+          - Formal Documentation
+    
+    +item("Agile Training", "Training Course", "Ripple Rock", "2017")
+      .description A 2 week intensive course in the implimentation of Agile and Scrum
 
   .main-block
     h2 #[i.fa.fa-suitcase] Experiences
     
-    +item("Bastard in Residence", "Winterfell Castle", "North", "Sn 1")
+    +item("Software Tester", "AST Systems", "Eastleigh", "2016", "2017")
       :markdown-it
-        - Spent time with the rest of the family.
-        - Waited outside on formal occasions.
+        - Manual Software Testing
+        - Development of Automated Tests
         
-    +item("Lord Commander", "Night Watch", "Castle Black", "Sn 1", "Sn 6")
+    +item("Junior Software Developer", "SupplyPoint", "Porchester", "2017", "2019")
       :markdown-it
-        - Defended a thousand-years tradition
-        - Liked the job so much, got stabbed and died and still came back the next SHanged all the rascals.
+        - Fully Stack Development with C# and Javascript
+        - UI Design using the ReactJS Framework
+        - Development of REST API's
         
-    +item("King in the North", "Winterfell Castle", "North", "Sn 6", "Sn 7")
+    +item("Application Systems Specialist", "toob", "Cosham", "2019", "Present")
       :markdown-it
-        - Tightened links with the Mother of Dragons
-        - Wisely delegated important responsabilities to my sister.
+        - Integration of 3rd Party API's
+        - Integration of ACS and other 3rd Party Systems to Support a Network
+        - Development of Custom DLL's and Plugins for a .NET based Platform
         
   .main-block
-    h2 #[i.fa.fa-folder-open] Selected Projects 
-    
-    +item("Hardhome Rescue", "Some Workplace", null, "Sn 6")
+    h2 #[i.fa.fa-folder-open] Skills and Projects
+
+    +item("Back-End Development", "C#, .NET Core, Python and NodeJS")
       :markdown-it
-        - Came there for the people, stayed for the white walkers. 
-        - Brought back a few hundred wildings.
-        
-    +item("Wilding Raid Rebutal", "Some other workplace", null, "Sn 5")
+        - Strong Knowledge of Database Interaction using Dapper, EntityFramework and ADO.NET
+        - Experence Developing RESTful API's
+        - Focus in Webfacing Applications but Strong Knowledge of Client Side Development Too
+        - Cross Platform Development Including Docker, Linux and Windows
+
+    +item("Front-End Development", "C#, .NET Core, Python and NodeJS")
       :markdown-it
-        - Fought back one of the largest wilding armies ever.
-        - Stepped up when the commander was down.
-        - Events led to my nomination as Lord Commander
-        
-    +item("White Walker Capture", "Some other workplace", null, "Sn 7")
+        - Vast Knowledge of of Javascript and JS Frameworks such as React and Jquery
+        - Able to Build Fast and Efficient Cross Platform Applications using Electron
+        - UI and UX Design for Both Desktop and Mobile Browsers
+
+    +item("Development Environments", "Other Development Related Skills")
       :markdown-it
-        - Organized and led an elite squadron for the capture of a Walker.
-        - Outcome led to world peace in front of a common ennemy.
-  
-  .main-block.concise
-    h2 #[i.fa.fa-graduation-cap] Education
+        - Strong Knowledge of Git and Git Based Version Control Systems
+        - Well Versed in the use of Visual Studio and VSCode
+        - Able to Work in Both Windows and Linux without Issue
+        - Good with Networking and Server Maintenance
     
-    +item("Martial Training", "Winterfell Castle", "North", "Sn 1")
-      .description Relationship of the number with the answer to life, the universe and everything
-      
-    +item("Squire Training", "Castle Black", "North",  "Sn 1", "Sn 3")
-      .description Made the bed, folded the towels, listened a lot.
-    
-    +item("School of Life")
+    +item("Hypercube", "Custom 3D printer")
       .concise
         :markdown-it
-          Generic dialectic life lessons including
-          - Do we ever *know* anything ?
-          - Is *this* a trick ?
-          - How to king
+          - Built Custom Frame 
+          - All Custom Cabling
+          - Custom Built Firmware Modified to Fit Needs
+          - Lots of Future Modifications Planned
 
 #sidebar
+  .name George Deeley
+  .subtitle Software Developer
   #contact.side-block
-    h1 Contact Info
+    hr
     ul
-      li #[i.fa.fa-globe]  jonsnow.nth
-      li #[i.fa.fa-linkedin] linkedin.com/in/jon
-      li #[i.fa.fa-envelope] jonsnow@wintermail.com
-      li #[i.fa.fa-twitter] @kingInTheNorthBaby
-      li #[i.fa.fa-phone] 801.603.0431
-      
-  #skills.side-block
-    h1 Skills
-    ul
-      li Fighting
-      li Wall climbing
-    ul
-      li Rescuscitating
-      li Kinging
+      li #[i.fa.fa-github] github.com/IllusiveBagel
+      li #[i.fa.fa-linkedin] linkedin.com/in/gdeeley
+      li #[i.fa.fa-envelope] logan@neutral.systems
+      li #[i.fa.fa-phone] 07446696964
+    hr
   
   //- This points to mnjul's original resume project
   #disclaimer.side-block.
-      This résumé was wholly typeset with HTML/CSS — see code git.io/vVSYL
+      CV code available at: https://github.com/IllusiveBagel/CV
 
 style
   include:scss cv.scss
