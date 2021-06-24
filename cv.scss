@@ -4,9 +4,11 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
 @import 'https://fonts.googleapis.com/css?family=Source+Code+Pro';
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+
 .blocks {
   height: fit-content;
 }
+
 .decorator::after {
   margin-left: 1px;
 }
@@ -30,4 +32,25 @@
   width: 100%;
   text-align: center;
   margin-top: 0;
+}
+
+.description {
+  max-width: 75%;
+}
+
+.main-title {
+  display: block;
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: bold;
+  position: relative;
+  left: var(--date-block-width);
+}
+
+.main-dsc {
+  max-width: 75%;
+}
+
+.break {
+  height: 60px;
 }

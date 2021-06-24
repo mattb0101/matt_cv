@@ -1,6 +1,86 @@
 include cv-mixins.pug
 
 #main
+  .main-block 
+    .main-title #[i.fa.fa-code] About Me
+
+    +desc()
+      :markdown-it
+        My name is Logan. I have been a software developer for the last 4 years and started my career as a tester.
+        I believe having started as a tester I have brought along with me the skills and mindset needed to ensure
+        my code is efficient and has been tested to the extreme. My goal as a software developer is to create clean 
+        modern looking systems that run fast and efficiently for the best user experience possible.
+
+  .main-block
+    h2 #[i.fa.fa-suitcase] Experiences
+
+    +item("Software Developer", "North Sails", "Gosport", "Present", "2020")
+      :markdown-it
+        Use of ReactJS and C# to build a more modern and user friendly
+        experience for internal sales and task management software. 
+        This was part of an upgrade from an old VB system to use modern
+        technologies making the overall system not only faster and more 
+        responsive but also simpler to use.
+
+        #### Skills Used
+        - Front-End Development with ReactJS
+        - Back-End Development with C# and VB 
+        - Database interaction with SQL Server and Transact-SQL
+
+    +item("Application Systems Specialist", "toob", "Cosham", "2020", "2019")
+      :markdown-it
+        This role evolved over time and covered a wide range of tasks 
+        but was mainly focused around integrating different systems to 
+        work with a central software platform.
+
+        My main achievment while working at toob was the intial setup 
+        of an ACS system and intigration of the ACS API into the core 
+        network management software allowing the remote management of 
+        CPE giving the support staff the ability to setup, manage and 
+        diagnose issues for customers all in one location.
+
+        #### Skills Used 
+        - Front-End Development with Javascript and HTML5
+        - Back-End Development with C#
+        - Server Management on Both Linux and Windows Server
+
+    +item("Junior Software Developer", "SupplyPoint", "Porchester", "2019", "2017")
+      :markdown-it
+        At SupplyPoint I worked on 2 main projects. The first project 
+        was the development of a REST API to enable the sharing of 
+        information from a central system to other smaller pieces of 
+        software allowing for a central store of information.
+
+        The second project was the development of the UI for industrial
+        vending machines using ReactJS. This development was to replace 
+        an outdated UI in order to give customers more power over the 
+        appearence of their machines
+
+        #### Skills Used 
+        - REST API Devlopment in C# and .NET Core 
+        - Transact SQL and Stored Procedures 
+        - Desktop Development with Electron 
+        - Front-End Development with ReactJS
+    
+    +item("Software Tester", "AST Systems", "Eastleigh", "2017", "2016")
+      :markdown-it
+        This role was part of my apprenticeship and involved a variety 
+        of tasks to aid my learning. My primary role in the company was 
+        to test the software being developed and to create automated tests 
+        to help ensure the software is tested consistently.
+
+        Along side my role as the tester I also helped to maintain the 
+        windows servers used for testing and development and the databases 
+        for each system to ensure that all the servers were running the same 
+        versions and had the same data.
+
+        #### Skills Used 
+        - Automating tests with Selenium and Python 
+        - Creating Unit tests in C# with .NET 
+        - Maintaining Databases with SQL Server and Transact-SQL
+
+  .break
+
   .main-block
     h2 #[i.fa.fa-graduation-cap] Education
     
@@ -21,26 +101,7 @@ include cv-mixins.pug
     
     +item("Agile Training", "Training Course", "Ripple Rock", "2017")
       .description A 2 week intensive course in the implimentation of Agile and Scrum
-
-  .main-block
-    h2 #[i.fa.fa-suitcase] Experiences
-    
-    +item("Software Tester", "AST Systems", "Eastleigh", "2016", "2017")
-      :markdown-it
-        - Manual Software Testing
-        - Development of Automated Tests
         
-    +item("Junior Software Developer", "SupplyPoint", "Porchester", "2017", "2019")
-      :markdown-it
-        - Full Stack Development with C# and Javascript
-        - UI Design using the ReactJS Framework
-        - Development of REST API's
-        
-    +item("Application Systems Specialist", "toob", "Cosham", "2019", "Present")
-      :markdown-it
-        - Integration of 3rd Party API's
-        - Integration of ACS and other 3rd Party Systems to Support a Network
-        - Development of Custom DLL's and Plugins for a .NET based Platform
         
   .main-block
     h2 #[i.fa.fa-folder-open] Skills and Projects
@@ -66,12 +127,27 @@ include cv-mixins.pug
         - Good with Networking and Server Maintenance
     
     +item("Hypercube", "Custom 3D printer")
-      .concise
-        :markdown-it
-          - Built Custom Frame 
-          - All Custom Cabling
-          - Custom Built Firmware Modified to Fit Needs
-          - Lots of Future Modifications Planned
+      :markdown-it
+        My lockdown project was to create a 3D printer I can use to help with future projects.
+        This used a wide range of skills to get done some of which I learnt along the way, The 
+        whole project took around 4 months but I am now very happy with the outcome and have 
+        started to use the printer for lots of new projects.
+
+#sidebar
+  .name Logan Young
+  .subtitle Software Developer
+  #contact.side-block
+    hr
+    ul
+      li #[i.fa.fa-github] github.com/IllusiveBagel
+      li #[i.fa.fa-linkedin] linkedin.com/in/lky
+      li #[i.fa.fa-envelope] logan@neutral.systems
+      li #[i.fa.fa-phone] 07446696964
+    hr
+  
+  //- This points to mnjul's original resume project
+  #disclaimer.side-block.
+      CV code available at: https://github.com/IllusiveBagel/CV
 
 #sidebar
   .name Logan Young
