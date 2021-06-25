@@ -9,6 +9,10 @@
   height: fit-content;
 }
 
+.main-block {
+  margin-top: 0;
+}
+
 .decorator::after {
   margin-left: 1px;
 }
@@ -35,7 +39,7 @@
 }
 
 .description {
-  max-width: 75%;
+  max-width: 70%;
 }
 
 .main-title {
@@ -52,5 +56,5 @@
 }
 
 .break {
-  height: 60px;
+  height: 50px;
 }
