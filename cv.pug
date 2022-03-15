@@ -14,7 +14,39 @@ include cv-mixins.pug
   .main-block
     h2 #[i.fa.fa-suitcase] Experiences
 
-    +item("Software Developer", "North Sails", "Gosport", "Present", "2020")
+    +item("Software Developer", "MI-Voice", "Southampton", "2022", "2021")
+      :markdown-it
+        My role at MI-Voice was to help improve and modernise their voting
+        platform. The platform is built in 3 sections that each involved
+        different skills.
+
+        My tasks involved the use of multiple systems including a REST API
+        built in C# and .NET Core and a CMS using Sanity that was used to
+        create NextJS sites that used ReactJS components that provided a
+        modern and response feel to the end user.
+
+        #### Skills Used 
+        - Front-End Development with ReactJS 
+        - Back-End Development with C#
+        - Database interaction with EntityFramework
+        - CMS Development using Sanity
+
+    +item("Software Developer", "Dootrix", "Wickham", "2021", "2021")
+      :markdown-it
+        Use of ReactJS and C# on a variety of different projects to help
+        build modern and intuitive applications.
+
+        Dootrix is a software development house that built applications
+        for a variety of customers so in this role I worked on multiple
+        projects which offered unique functionality.
+
+        #### Skills Used 
+        - Front-End Development with ReactJS 
+        - Back-End Development with C#
+        - Mobile Development with Xamarin
+        - Cloud Intigration with Azure
+
+    +item("Software Developer", "North Sails", "Gosport", "2021", "2020")
       :markdown-it
         Use of ReactJS and C# to build a more modern and user friendly
         experience for internal sales and task management software. 
@@ -43,6 +75,12 @@ include cv-mixins.pug
         - Front-End Development with Javascript and HTML5
         - Back-End Development with C#
         - Server Management on Both Linux and Windows Server
+
+  .break
+  .break
+
+  .main-block
+    h2 #[i.fa.fa-suitcase] Experiences
 
     +item("Junior Software Developer", "SupplyPoint", "Porchester", "2019", "2017")
       :markdown-it
@@ -102,6 +140,8 @@ include cv-mixins.pug
     +item("Agile Training", "Training Course", "Ripple Rock", "2017")
       .description A 2 week intensive course in the implimentation of Agile and Scrum
         
+  .break
+  .break
   .break      
         
   .main-block
@@ -116,9 +156,16 @@ include cv-mixins.pug
 
     +item("Front-End Development", "C#, .NET Core, Python and NodeJS")
       :markdown-it
-        - Vast Knowledge of of Javascript and JS Frameworks such as React and Jquery
+        - Vast Knowledge of Javascript and JS Frameworks such as React and Jquery
         - Able to Build Fast and Efficient Cross Platform Applications using Electron
         - UI and UX Design for Both Desktop and Mobile Browsers
+        - Stong knowledge on the use of Typescript in conjuction with ReactJS
+
+    +item("Mobile Development", "React-Native, Xamarin")
+      :markdown-it
+        - Stong use of React-Native and Expo to build Mobile Apps 
+        - Able to use a vast amaount of industry standard frameworks to build cross-platform apps
+        - Working knowledge of Xamarin to build applications in C#
 
     +item("Development Environments", "Other Development Related Skills")
       :markdown-it
@@ -143,6 +190,22 @@ include cv-mixins.pug
         project public. The software is completely written in ReactJS and my plan is to make it more 
         community driven in the future.
 
+
+#sidebar
+  .name Logan Young
+  .subtitle Software Developer
+  #contact.side-block
+    hr
+    ul
+      li #[i.fa.fa-github] github.com/IllusiveBagel
+      li #[i.fa.fa-linkedin] linkedin.com/in/lky
+      li #[i.fa.fa-envelope] logan@neutral.systems
+      li #[i.fa.fa-phone] 07446696964
+    hr
+  
+  //- This points to mnjul's original resume project
+  #disclaimer.side-block.
+      CV code available at: https://github.com/IllusiveBagel/CV
 
 #sidebar
   .name Logan Young
