@@ -1,9 +1,9 @@
 # PDF CV with Relaxed.JS (based on mnjul's design)
 
-> Master document: [``cv.pug``](https://github.com/IllusiveBagel/CV/blob/master/cv.pug). <br/>
-Stylesheet: [``cv.scss``](https://github.com/IllusiveBagel/CV/blob/master/cv.scss).
+> Master document: [`cv.pug`](https://github.com/IllusiveBagel/CV/blob/master/cv.pug). <br/>
+> Stylesheet: [`cv.scss`](https://github.com/IllusiveBagel/CV/blob/master/cv.scss).
 
-<p align=center><img src="https://github.com/IllusiveBagel/CV/blob/master/cv_screenshot.png"/></p>
+![Screenshot](./screenshot.png)
 
 This CV is based on the RelaxedJS Example which can be found [Here](https://github.com/RelaxedJS/ReLaXed-examples/tree/master/examples/resume/). The RelaxedJS Example is a Conversion of mnjul's Web project which can be found [Here](https://github.com/mnjul/html-resume).
 
