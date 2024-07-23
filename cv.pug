@@ -1,254 +1,207 @@
 include cv-mixins.pug
 
-#main
-  .main-block 
-    .main-title #[i.fa.fa-code] About Me
+#page
+    #main
+        .main-block
+            .main-title #[i.fa.fa-code] About Me
 
-    +desc()
-      :markdown-it
-        My name is Logan. I have been a software developer for the last 7 years and started my career as a tester.
-        I believe having started as a tester I have brought along with me the skills and mindset needed to ensure
-        my code is efficient and has been tested to the extreme. My goal as a software developer is to create clean 
-        modern looking systems that run fast and efficiently for the best user experience possible.
+            +desc()
+                :markdown-it
+                    My name is Logan. I have been a software developer for the last 7 years and started my career as a tester.
+                    I believe having started as a tester I have brought along with me the skills and mindset needed to ensure
+                    my code is efficient and has been tested to the extreme. My goal as a software developer is to create clean 
+                    modern looking systems that run fast and efficiently for the best user experience possible.
 
-  .main-block
-    h2 #[i.fa.fa-suitcase] Experiences
+        .main-block
+            h2 #[i.fa.fa-suitcase] Experiences
 
-    +item("Front-end Developer", "Autoprotect", "Home", "2024", "2022")
-      :markdown-it
-        At Autoprotect I was tasked with the development of a user friendly and modern
-        webapp built using ReactJS and Redux. 
+            +item("Front-end Developer", "Autoprotect", "Home", "Present", "May 2022")
+                :markdown-it
+                    At Autoprotect I was tasked with the development of a user friendly and modern
+                    webapp built using ReactJS and Redux. 
 
-        My tasks included the development of business logic using React and integrating 
-        with REST API's and creating a clean and user friends UI using a mix of Material-UI 
-        and custom CSS. I also played a key role in managing piplines and deployments for
-        production releases.
+                    My tasks included the development of business logic using React and integrating 
+                    with REST API's and creating a clean and user friends UI using a mix of Material-UI 
+                    and custom CSS. I also played a key role in managing piplines and deployments for
+                    production releases.
 
-        #### Skills Used
-        - Front-End Development with ReactJS
-        - State Management with Redux
-        - Management of Gitlab Piplines 
-        - UI Design with Material-UI
+                    #### Skills Used
+                    - Front-End Development with ReactJS
+                    - State Management with Redux
+                    - Management of Gitlab Piplines 
+                    - UI Design with Material-UI
 
-    +item("Software Developer", "MI-Voice", "Southampton", "2022", "2021")
-      :markdown-it
-        My role at MI-Voice was to help improve and modernise their voting
-        platform. The platform is built in 3 sections that each involved
-        different skills.
+            +item("Software Developer", "MI-Voice", "Southampton", "Mar 2022", "Nov 2021")
+                :markdown-it
+                    My role at MI-Voice was to help improve and modernise their voting
+                    platform. The platform is built in 3 sections that each involved
+                    different skills.
 
-        My tasks involved the use of multiple systems including a REST API
-        built in C# and .NET Core and a CMS using Sanity that was used to
-        create NextJS sites that used ReactJS components that provided a
-        modern and response feel to the end user.
+                    My tasks involved the use of multiple systems including a REST API
+                    built in C# and .NET Core and a CMS using Sanity that was used to
+                    create NextJS sites that used ReactJS components that provided a
+                    modern and response feel to the end user.
 
-        #### Skills Used 
-        - Front-End Development with ReactJS 
-        - Back-End Development with C#
-        - Database interaction with EntityFramework
-        - CMS Development using Sanity
+                    #### Skills Used 
+                    - Front-End Development with ReactJS 
+                    - Back-End Development with C#
+                    - Database interaction with EntityFramework
+                    - CMS Development using Sanity
 
-    +item("Software Developer", "Dootrix", "Wickham", "2021", "2021")
-      :markdown-it
-        Use of ReactJS and C# on a variety of different projects to help
-        build modern and intuitive applications.
+            +item("Software Developer", "Dootrix", "Wickham", "Oct 2021", "Aug 2021")
+                :markdown-it
+                    Use of ReactJS and C# on a variety of different projects to help
+                    build modern and intuitive applications.
 
-        Dootrix is a software development house that built applications
-        for a variety of customers so in this role I worked on multiple
-        projects which offered unique functionality.
+                    Dootrix is a software development house that built applications
+                    for a variety of customers so in this role I worked on multiple
+                    projects which offered unique functionality.
 
-        #### Skills Used 
-        - Front-End Development with ReactJS 
-        - Back-End Development with C#
-        - Mobile Development with Xamarin
-        - Cloud Intigration with Azure
+                    #### Skills Used 
+                    - Front-End Development with ReactJS 
+                    - Back-End Development with C#
+                    - Mobile Development with Xamarin
+                    - Cloud Intigration with Azure
 
-    +item("Software Developer", "North Sails", "Gosport", "2021", "2020")
-      :markdown-it
-        Use of ReactJS and C# to build a more modern and user friendly
-        experience for internal sales and task management software. 
-        This was part of an upgrade from an old VB system to use modern
-        technologies making the overall system not only faster and more 
-        responsive but also simpler to use.
+            +item("Software Developer", "North Sails", "Gosport", "Aug 2021", "Oct 2020")
+                :markdown-it
+                    Use of ReactJS and C# to build a more modern and user friendly
+                    experience for internal sales and task management software. 
+                    This was part of an upgrade from an old VB system to use modern
+                    technologies making the overall system not only faster and more 
+                    responsive but also simpler to use.
 
-        #### Skills Used
-        - Front-End Development with ReactJS
-        - Back-End Development with C# and VB 
-        - Database interaction with SQL Server and Transact-SQL
+                    #### Skills Used
+                    - Front-End Development with ReactJS
+                    - Back-End Development with C# and VB 
+                    - Database interaction with SQL Server and Transact-SQL
 
+    +sidebar
+
+#page
+    #main
+        .main-block
+            h2 #[i.fa.fa-suitcase] Experiences
+
+            +item("Application Systems Specialist", "toob", "Cosham", "Jul 2020", "May 2019")
+                :markdown-it
+                    This role evolved over time and covered a wide range of tasks 
+                    but was mainly focused around integrating different systems to 
+                    work with a central software platform.
+
+                    My main achievement while working at toob was the initial setup 
+                    of an ACS system and integration of the ACS API into the core 
+                    network management software allowing the remote management of 
+                    CPE giving the support staff the ability to setup, manage and 
+                    diagnose issues for customers all in one location.
+
+                    #### Skills Used 
+                    - Front-End Development with Javascript and HTML5
+                    - Back-End Development with C#
+                    - Server Management on Both Linux and Windows Server
+
+            +item("Junior Software Developer", "SupplyPoint", "Porchester", "May 2019", "Sep 2017")
+                :markdown-it
+                    At SupplyPoint I worked on 2 main projects. The first project 
+                    was the development of a REST API to enable the sharing of 
+                    information from a central system to other smaller pieces of 
+                    software allowing for a central store of information.
+
+                    The second project was the development of the UI for industrial
+                    vending machines using ReactJS. This development was to replace 
+                    an outdated UI in order to give customers more power over the 
+                    appearance of their machines
+
+                    #### Skills Used 
+                    - REST API Development in C# and .NET Core 
+                    - Transact SQL and Stored Procedures 
+                    - Desktop Development with Electron 
+                    - Front-End Development with ReactJS
     
+            +item("Software Tester", "AST Systems", "Eastleigh", "Sep 2017", "Jun 2016")
+                :markdown-it
+                    This role was part of my apprenticeship and involved a variety 
+                    of tasks to aid my learning. My primary role in the company was 
+                    to test the software being developed and to create automated tests 
+                    to help ensure the software is tested consistently.
 
-  .break
-  .break
+                    Alongside my role as the tester I also helped to maintain the 
+                    windows servers used for testing and development and the databases 
+                    for each system to ensure that all the servers were running the same 
+                    versions and had the same data.
 
-  .main-block
-    h2 #[i.fa.fa-suitcase] Experiences
+                    #### Skills Used 
+                    - Automating tests with Selenium and Python 
+                    - Creating Unit tests in C# with .NET 
+                    - Maintaining Databases with SQL Server and Transact-SQL
 
-    +item("Application Systems Specialist", "toob", "Cosham", "2020", "2019")
-      :markdown-it
-        This role evolved over time and covered a wide range of tasks 
-        but was mainly focused around integrating different systems to 
-        work with a central software platform.
-
-        My main achievement while working at toob was the initial setup 
-        of an ACS system and integration of the ACS API into the core 
-        network management software allowing the remote management of 
-        CPE giving the support staff the ability to setup, manage and 
-        diagnose issues for customers all in one location.
-
-        #### Skills Used 
-        - Front-End Development with Javascript and HTML5
-        - Back-End Development with C#
-        - Server Management on Both Linux and Windows Server
-
-    +item("Junior Software Developer", "SupplyPoint", "Porchester", "2019", "2017")
-      :markdown-it
-        At SupplyPoint I worked on 2 main projects. The first project 
-        was the development of a REST API to enable the sharing of 
-        information from a central system to other smaller pieces of 
-        software allowing for a central store of information.
-
-        The second project was the development of the UI for industrial
-        vending machines using ReactJS. This development was to replace 
-        an outdated UI in order to give customers more power over the 
-        appearance of their machines
-
-        #### Skills Used 
-        - REST API Development in C# and .NET Core 
-        - Transact SQL and Stored Procedures 
-        - Desktop Development with Electron 
-        - Front-End Development with ReactJS
+        .main-block
+            h2 #[i.fa.fa-graduation-cap] Education
     
-    +item("Software Tester", "AST Systems", "Eastleigh", "2017", "2016")
-      :markdown-it
-        This role was part of my apprenticeship and involved a variety 
-        of tasks to aid my learning. My primary role in the company was 
-        to test the software being developed and to create automated tests 
-        to help ensure the software is tested consistently.
-
-        Alongside my role as the tester I also helped to maintain the 
-        windows servers used for testing and development and the databases 
-        for each system to ensure that all the servers were running the same 
-        versions and had the same data.
-
-        #### Skills Used 
-        - Automating tests with Selenium and Python 
-        - Creating Unit tests in C# with .NET 
-        - Maintaining Databases with SQL Server and Transact-SQL
-
-  .break
-  .break
-  .break
-  .break
-  .break
-  .break 
-  .break
-
-  .main-block
-    h2 #[i.fa.fa-graduation-cap] Education
-    
-    +item("GCSE's", "Secondary School", "Bayhouse School", "2010", "2015")
-      .description Average grade of a B accross the board with A's in English and Maths
+            +item("GCSE's", "Secondary School", "Bayhouse School", "2010", "2015")
+                :markdown-it
+                    Average grade of a B accross the board with A's in English and Maths
       
-    +item("Level 3 Diploma in Gaming and Computing", "College", "Fareham College",  "2015", "2016")
-      .description Computing Course Focusing on Gaming With Units in Software and Web Development
+            +item("Level 3 Diploma in Gaming and Computing", "College", "Fareham College",  "2015", "2016")
+                :markdown-it
+                    Computing Course Focusing on Gaming With Units in Software and Web Development
     
-    +item("Level 3 Extended Diploma in IT and Telecomms", "Apprenticeship", "3aaa Apprenticeships", "2016", "2017")
-      .concise
-        :markdown-it
-          This course included multiple important units:
-          - Networking
-          - Software Development
-          - IT Support
-          - Formal Documentation
+            +item("Level 3 Extended Diploma in IT and Telecomms", "Apprenticeship", "3aaa Apprenticeships", "2016", "2017")
+                .concise
+                    :markdown-it
+                        This course included multiple important units:
+                        - Networking
+                        - Software Development
+                        - IT Support
+                        - Formal Documentation
     
-    +item("Agile Training", "Training Course", "Ripple Rock", "2017")
-      .description A 2 week intensive course in the implimentation of Agile and Scrum    
-    
-  .break 
-        
-  .main-block
-    h2 #[i.fa.fa-folder-open] Skills and Projects
-    
-    +item("Front-End Development", "ReactJS, Typescript, Redux")
-      :markdown-it
-        - Vast Knowledge of Javascript and JS Frameworks such as React and Jquery
-        - Able to Build Fast and Efficient Cross Platform Applications using Electron
-        - UI and UX Design for Both Desktop and Mobile Browsers
-        - Stong knowledge on the use of Typescript in conjuction with ReactJS
+            +item("Agile Training", "Training Course", "Ripple Rock", "2017")
+                :markdown-it
+                    A 2 week intensive course in the implimentation of Agile and Scrum 
 
-    +item("Mobile Development", "React-Native")
-      :markdown-it
-        - Stong use of React-Native and Expo to build Mobile Apps 
-        - Able to use a vast amount of industry standard frameworks to build cross-platform apps
+    +sidebar
 
-    +item("Development Environments", "Other Development Related Skills")
-      :markdown-it
-        - Strong Knowledge of Git and Git Based Version Control Systems
-        - Well Versed in the use of Visual Studio and VSCode
-        - Able to Work in Both Windows and Linux without Issue
-        - Good with Networking and Server Maintenance
-    
-    +item("Hypercube", "Custom 3D printer")
-      :markdown-it
-        My lockdown project was to create a 3D printer I can use to help with future projects.
-        This used a wide range of skills to get done, some of which I learnt along the way. The 
-        whole project took around 4 months but I am now very happy with the outcome and I have 
-        now started to use the printer for lots of new projects.
+#page
+    #main 
+        .main-block
+            h2 #[i.fa.fa-folder-open] Skills and Projects
+            
+            +item("Front-End Development", "ReactJS, Typescript, Redux")
+                :markdown-it
+                    - Vast Knowledge of Javascript and JS Frameworks such as React and Jquery
+                    - Able to Build Fast and Efficient Cross Platform Applications using Electron
+                    - UI and UX Design for Both Desktop and Mobile Browsers
+                    - Stong knowledge on the use of Typescript in conjuction with ReactJS
 
-    +item("DBML Docs", "Open Source Project")
-      :markdown-it
-        I have recently released a beta version of an open source database documentation software.
-        The software uses the DBML standard to generate a database documentation site based on a
-        .DBML file. My goals with the project was to create a tool I can use myself for other 
-        projects I have planned but I was so happy with the end result that I decided to make the 
-        project public. The software is completely written in ReactJS and my plan is to make it more 
-        community driven in the future.
+            +item("Mobile Development", "React-Native")
+                :markdown-it
+                    - Stong use of React-Native and Expo to build Mobile Apps 
+                    - Able to use a vast amount of industry standard frameworks to build cross-platform apps
 
+            +item("Development Environments", "Other Development Related Skills")
+                :markdown-it
+                    - Strong Knowledge of Git and Git Based Version Control Systems
+                    - Well Versed in the use of Visual Studio and VSCode
+                    - Able to Work in Both Windows and Linux without Issue
+                    - Good with Networking and Server Maintenance
+            
+            +item("Hypercube", "Custom 3D printer")
+                :markdown-it
+                    My lockdown project was to create a 3D printer I can use to help with future projects.
+                    This used a wide range of skills to get done, some of which I learnt along the way. The 
+                    whole project took around 4 months but I am now very happy with the outcome and I have 
+                    now started to use the printer for lots of new projects.
 
-#sidebar
-  .name Logan Young
-  .subtitle Software Developer
-  #contact.side-block
-    hr
-    ul
-      li #[i.fa.fa-github] github.com/IllusiveBagel
-      li #[i.fa.fa-linkedin] linkedin.com/in/lky
-      li #[i.fa.fa-envelope] logan@neutral.systems
-      li #[i.fa.fa-phone] 07446696964
-    hr
-  
-  #disclaimer.side-block.
-      CV code available at: https://github.com/IllusiveBagel/CV
+            +item("DBML Docs", "Open Source Project")
+                :markdown-it
+                    I have recently released a beta version of an open source database documentation software.
+                    The software uses the DBML standard to generate a database documentation site based on a
+                    .DBML file. My goals with the project was to create a tool I can use myself for other 
+                    projects I have planned but I was so happy with the end result that I decided to make the 
+                    project public. The software is completely written in ReactJS and my plan is to make it more 
+                    community driven in the future.
 
-#sidebar
-  .name Logan Young
-  .subtitle Software Developer
-  #contact.side-block
-    hr
-    ul
-      li #[i.fa.fa-github] github.com/IllusiveBagel
-      li #[i.fa.fa-linkedin] linkedin.com/in/lky
-      li #[i.fa.fa-envelope] logan@neutral.systems
-      li #[i.fa.fa-phone] 07446696964
-    hr
-  
-  #disclaimer.side-block.
-      CV code available at: https://github.com/IllusiveBagel/CV
-
-#sidebar
-  .name Logan Young
-  .subtitle Software Developer
-  #contact.side-block
-    hr
-    ul
-      li #[i.fa.fa-github] github.com/IllusiveBagel
-      li #[i.fa.fa-linkedin] linkedin.com/in/lky
-      li #[i.fa.fa-envelope] logan@neutral.systems
-      li #[i.fa.fa-phone] 07446696964
-    hr
-  
-  #disclaimer.side-block.
-      CV code available at: https://github.com/IllusiveBagel/CV
+    +sidebar
 
 style
-  include:scss cv.scss
+    include:scss cv.scss

@@ -21,3 +21,20 @@ mixin desc()
     .date
     .main-dsc 
       block
+
+mixin sidebar()
+    #sidebar
+        img(src="./logo.png")
+        .name Logan Young
+        .subtitle Software Developer
+        #contact.side-block
+            hr
+            ul
+                li #[i.fa.fa-github] github.com/IllusiveBagel
+                li #[i.fa.fa-linkedin] linkedin.com/in/lky
+                li #[i.fa.fa-envelope] logan@neutral.systems
+                li #[i.fa.fa-phone] 07446696964
+            hr
+    
+        #disclaimer.side-block.
+            CV code available at: https://github.com/IllusiveBagel/CV
